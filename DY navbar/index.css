@@ -1,1 +1,46 @@
 
+body{
+    margin: 0;
+}
+.top-container{
+    background: url("https://images.unsplash.com/photo-1518932945647-7a1c969f8be2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.4s;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+}
+.navbar ul li a:hover{
+    background-color: bisque;
+    color: rgb(53, 49, 43);
+}
+.bottom-container p{
+    margin: 50px 50px;
+    font-family: sans-serif;
+}
+.active{
+    background-color: bisque;
+}
+.active ul li a{
+    color: rgb(63, 79, 38);
+}
