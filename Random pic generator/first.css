@@ -1,0 +1,58 @@
+/*finally this is going to get interesting and 
+we are going to make the button have a ripple effect*/
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    align-items: center;
+}
+.container{
+    text-align: center;
+}
+.container img{
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, .6);
+}
+.btn{
+    position: relative;
+    margin: 10px;
+    border: none;
+    background-color: wheat;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .6);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: color .5s;
+}
+.btn:active{
+    transform: scale(.9);
+}
+.btn::before{
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: rgb(94, 53, 53);
+    position: absolute;
+    top: var(--yPos);
+    left: var(--xPos);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width .8s, height .8s;
+    
+}
+.btn:hover{
+    color:white;
+}
+.btn:hover::before{
+    width: 300px;
+    height: 300px;
+}
+.text{
+    z-index: 1;
+    position: relative;
+}
