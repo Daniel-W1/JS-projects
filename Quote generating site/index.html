@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotify</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="transitions.css">
+    <script src="random.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="transition transition-1 is-active">
+        <div class="ring"></div>
+        <span class="load">Loading..</span>
+    </div>
+    <div class="navbar" id="navbar">
+        <a href="about.html">About us</a>
+        <a href="index.html">Contact us</a>
+        <a href="random.html">Get random</a>
+    </div>
+
+    <div class="logo">
+        <a href="index.html">Quotify</a>
+        <span>Feel the words..</span>
+    </div>
+    <div class="whole">
+        <div class="input-container">
+            <input type="text" placeholder="Ex Love, Nature, Feelings" autofocus class="input">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+        </div>
+    </div>
+
+    <div class="quote">
+        <span class="text1"></span>
+        <span class="text2"></span>
+    </div>
+    <div class="footer">
+        <span><i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </span>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
