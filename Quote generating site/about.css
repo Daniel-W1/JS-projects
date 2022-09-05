@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: wheat;
+    font-family: sans-serif;
+}
+.image-container{
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(0deg);
+    position: relative;
+    transition: .5s;
+    cursor: pointer;
+}
+.image-container span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+    width: 100%;
+}
+.image-container span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+main{
+    margin: 300px 70px;
+    letter-spacing: 3px;
+   
+}
+main p{
+    text-align: left;
+}
