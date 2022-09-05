@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right,#d7d916,#cd94cd);
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.image-cont{
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    background-color: rgb(191, 141, 81);
+    position: relative;
+    overflow: hidden;
+    /* background: url('https://picsum.photos/300/300?random=1'); */
+    background-size: cover;
+    text-align: center;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-end;
+    color: rgb(207, 181, 134);
+    font-size: 20px;
+    text-shadow: 0 4px 7px black;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.quote, .author{
+    transition: all .4s;
+}
+.quote:hover{
+    text-shadow: 3px 3px 7px black;
+    color: rgb(233, 221, 221);
+}
+.author{
+    margin: 20px 0;
+}
+.author:hover{
+    text-decoration: underline;
+    color: rgb(80, 80, 132);
+}
+.other{
+    position: relative;
+    margin: 20px;
+}
+.btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 10px;
+    background-color: wheat;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 7px black;
+    transition: all .4s;
+}
+.btn:hover{
+    background-color: rgb(31, 24, 24);
+    color: rgb(255, 255, 255);
+}
