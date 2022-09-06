@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black;
+    color: wheat;
+}
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+#new-task-form{
+    display: flex;
+}
+input, button {
+    outline: none;
+    appearance: none;
+    background-color: none;
+    border: none;
+}
+#new-task-input{
+    flex:1 1 0%;
+    background-color: darkblue;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: greenyellow;
+
+}
+#new-task-input::placeholder{
+    color: rgb(117, 140, 82);
+}
+#new-task-submit{
+    color: purple;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, pink, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: all .4s;
+}
+#new-task-submit:hover{
+    opacity: .8;
+}
+#new-task-submit:active{
+    opacity: .6;
+}
+main{
+    flex: 1 1 0;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.task-list{
+    padding:1rem;
+}
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: wheat;
+    margin-bottom: 1rem;
+}
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+#tasks .task .content {
+    flex: 1 1 0%;
+}
+#tasks .task .content .text{
+    background-color: blue;
+    color: greenyellow;
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: .4s;
+}
+#tasks .task .content .text:not(:read-only){
+    color: wheat;
+}
+#tasks .task .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 800;
+    transition: .4s;
+    text-transform: uppercase;
+    background-color: blue;
+}
+.task .actions button:hover{
+    opacity: .8;
+}
+.task .actions button:active{
+    opacity: .6;
+}
+.task .actions .edit{
+    background-image: linear-gradient(to right, pink, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.task .actions .delete{
+    color: crimson;
+}
