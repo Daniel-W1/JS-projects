@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/contact-us.css">
+    <script src="../scripts/contact-us.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="topnav" id="mytopnav">
+              <div href="#" class="logo_div"><img src="../images/Explore Ethiopia.png" alt="" width="48px" height="48px"></div>
+
+                <a href="./contactus.html">Contact Us</a>
+                <a href="./aboutus.html">About Us</a>
+                <a href="./planning.html">Planning</a>
+                <a href="./basicinformation.html">Basic Information</a>
+                <a href="./experiences.html">Experiences</a>
+                <a href="./experiences.html">Explore Ethiopia</a>
+                <a href="./index.html" class="active">Home</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </div>
+        </nav>
+    <main>
+        <div class="title">
+            <h2>We would love to hear from you !</h2>
+        </div>
+        
+        <div class="container">
+            <form>
+              <div class="row">
+                <div class="col-25">
+                  <label>First Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" name="firstname" placeholder="Your name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label>Last Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" name="lastname" placeholder="Your last name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label>Email</label>
+                </div>
+                <div class="col-75">
+                  <input type="email" name="email" placeholder="Your email..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label>Message</label>
+                </div>
+                <div class="col-75">
+                  <textarea name="message" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit" onclick="validateForm()" class="submit-btn">
+              </div>
+            </form>
+          </div>
+        
+    </main>
+    <footer>
+        <div>
+            <h3> Explore Ethiopia.Copyright <span></span> 2023. All rights reserved.</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of use</a></li>
+            </ul>
+
+            <div>
+                <a href ="#"><i class="fa-brands fa-facebook icon"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram icon"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram icon"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter icon"></i></a> 
+            </div>
+
+        </div>
+        
+
+    </footer>
+</body>
+</html>
